@@ -14,9 +14,12 @@ const App = () => {
   <div className="film-container">
     <h1>Studio Ghibli Films</h1>
     <ul>
-      {films.map((film) => {
-        return <li key={film.id}>{film.title}</li>
-      })}
+      {films.map((film) => 
+        <div key={film.id}>
+          <header>{film.title}</header>
+          <p>{film.description}</p>
+        </div>
+      )}
     </ul>
   </div>
   );
