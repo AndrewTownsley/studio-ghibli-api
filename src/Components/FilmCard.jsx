@@ -14,13 +14,22 @@ const FilmCard = () => {
     <div className="film-container">
       {films.map((film) => 
         <div className="film-card" key={film.id}>
-          <header className="film-card-header"><h3>{film.title}</h3></header>
-          <p>{film.description.substring(0, 350)}...</p>
+          <header className="film-card-header">
+            <h3>{film.title}</h3>
+            </header>
+            <div className="film-card-info">
+              <p><span>Director:</span> {film.director}</p>
+              <p><span>Released:</span> {film.release_date}</p>
+              <p><span>Rating:</span> {film.rt_score}</p>
+              <p><span>Running time:</span> {film.running_time}</p>
+              <p className="film-card-desc">{film.description.substring(0, 350)}...</p>
+            </div>
         </div>
       )}
   </div>
   );
 }
+
 
 
 export default FilmCard;
