@@ -27,8 +27,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  max-height: 300px;
+  /* max-height: 300px; */
   max-width: 800px;
   overflow: hidden;
   margin: 0 1rem 3rem 1rem;
@@ -70,6 +69,18 @@ h1 {
 
 .film-card-desc {
   padding-top: 1rem;
+}
+
+.read-more {
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(72, 0, 255);
+}
+
+.read-more:hover {
+  text-decoration: underline;
 }
 
 /* --------------------------Media Queries-------------------------------- */
