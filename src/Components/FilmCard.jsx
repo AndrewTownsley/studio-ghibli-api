@@ -20,10 +20,11 @@ const FilmCard = () => {
             <div className="film-card-info">
               <p><span>Director:</span> {film.director}</p>
               <p><span>Released:</span> {film.release_date}</p>
-              <p><span>Rating:</span> {film.rt_score}</p>
-              <p><span>Running time:</span> {film.running_time}</p>
+              <p><span>Rating:</span> {film.rt_score}%</p>
+              <p><span>Running time:</span> {film.running_time} minutes</p>
               <p className="film-card-desc">{film.description.substring(0, 350)}...</p>
             </div>
+
         </div>
       )}
   </div>

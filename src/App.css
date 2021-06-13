@@ -31,13 +31,13 @@ h1 {
   max-height: 300px;
   max-width: 800px;
   overflow: hidden;
-  margin-bottom: 3rem;
+  margin: 0 1rem 3rem 1rem;
   background: #fff;
   color: #555;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 4px rgba(122, 220, 222, 0.3);
-  -moz-box-shadow: 0px 0px 10px 4px rgba(122, 220, 222, 0.3);
-  -webkit-box-shadow: 0px 0px 10px 4px rgba(122, 220, 222, 0.3);
+  box-shadow: 0px 0px 8px 1px rgba(232, 255, 254, 0.9);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(232, 255, 254, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(232, 255, 254, 0.9);
 }
 
 .film-card-header {
@@ -70,4 +70,20 @@ h1 {
 
 .film-card-desc {
   padding-top: 1rem;
+}
+
+/* --------------------------Media Queries-------------------------------- */
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .film-card {
+    max-height: fit-content;
+  }
+
+  .film-card-header h3 {
+    font-size: 1.4rem;
+  }
 }
